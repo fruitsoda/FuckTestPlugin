@@ -1,0 +1,11 @@
+name: FuckTestPlugin
+version: '${version}'
+main: org.fruitsoda.fucktestplugin.Main
+api-version: '1.20'
+commands:
+  status:
+    description: display player status
+  changePrefix:
+    description: change player prefix
+  addPlayerData:
+    description: add player status data
