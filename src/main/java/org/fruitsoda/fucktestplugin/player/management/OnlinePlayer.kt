@@ -9,4 +9,5 @@ data class OnlinePlayer(
     var rank:String,
     var prefix:String,
     var money: ULong
+    //뀨
 )
