@@ -12,7 +12,7 @@ class Main : JavaPlugin() {
         //make config.yml
         saveConfig()
         val cFile = File(dataFolder, "config.yml")
-        print(cFile.length().toInt())
+        logger.info(cFile.length().toString())
         if (cFile.length().toInt() == 0){
             config.options().copyDefaults(true)
             saveConfig()
