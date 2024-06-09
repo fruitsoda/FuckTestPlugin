@@ -9,18 +9,17 @@ class Main : JavaPlugin() {
     }
     override fun onEnable() {
         instance = this
-        //EventManager.registerEvents()
-        CommandManager.registerCommands()
-        EventManager.registerEvents()
-        logger.info("FUCKKKKKKK!!!!!!!!")
-
+        //make config.yml
         saveConfig()
         val cFile = File(dataFolder, "config.yml")
         if (cFile.length().toInt() == 0){
             config.options().copyDefaults(true)
             saveConfig()
         }
-        // Plugin startup logic
+        //EventManager.registerEvents()
+        CommandManager.registerCommands()
+        EventManager.registerEvents()
+        logger.info("FUCKKKKKKK!!!!!!!!")
     }
 
     override fun onDisable() {
