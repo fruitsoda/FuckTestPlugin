@@ -8,14 +8,15 @@ class Main : JavaPlugin() {
         var instance : Main?=null
     }
     override fun onEnable() {
-        instance = this
-        //make config.yml
         saveConfig()
         val cFile = File(dataFolder, "config.yml")
         if (cFile.length().toInt() == 0){
             config.options().copyDefaults(true)
             saveConfig()
         }
+        instance = this
+        //make config.yml
+
         //EventManager.registerEvents()
         CommandManager.registerCommands()
         EventManager.registerEvents()
