@@ -9,3 +9,5 @@ commands:
     description: change player prefix
   addPlayerData:
     description: add player status data
+  checkUserData:
+    description: check user data test
