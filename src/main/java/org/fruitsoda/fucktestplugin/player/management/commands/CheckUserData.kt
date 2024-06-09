@@ -14,7 +14,7 @@ object CheckUserData:CommandExecutor {
         }
 
         val player = sender.player
-        if (PlayerManager.getPlayerData(player!!)?.uuid == null){
+        if (PlayerManager.getOfflinePlayerData(player!!)?.uuid == null){
             player.sendMessage("해당 유저 데이터가 없어요!")
         }else{
             player.sendMessage("있어요!!")

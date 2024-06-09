@@ -1,11 +1,12 @@
 package org.fruitsoda.fucktestplugin.player.management
 
+import org.bukkit.OfflinePlayer
 import org.bukkit.entity.Player
 import org.fruitsoda.fucktestplugin.Main
 
 object PlayerManager {
     private var onlinePlayerData = HashMap<Player, OnlinePlayer>()
-
+    private var offlinePlayerData = HashMap<OfflinePlayer, OnlinePlayer>()
     fun addPlayer(player: Player){
         val newOnlinePlayer = OnlinePlayer(
             player.uniqueId,
@@ -15,6 +16,7 @@ object PlayerManager {
             "noob",
             1000u)
         onlinePlayerData[player] = newOnlinePlayer
+        offlinePlayerData[player] = newOnlinePlayer
         Main.instance!!.logger.info("플레이어 데이터를 추가하였습니다!")
     }
 
@@ -25,5 +27,9 @@ object PlayerManager {
 
     fun getPlayerData(player: Player) : OnlinePlayer?{
         return onlinePlayerData[player]
+    }
+
+    fun getOfflinePlayerData(player:Player) : OnlinePlayer?{
+        return offlinePlayerData[player]
     }
 }

@@ -13,7 +13,7 @@ object StatusCommand:CommandExecutor {
             return false
         }
         val player = sender.player
-        PlayerManager.getPlayerData(player!!)?.let {
+        PlayerManager.getOfflinePlayerData(player!!)?.let {
             player.sendMessage("----------------------------")
             player.sendMessage("이름 : ${it.displayName}")
             player.sendMessage("직업 : ${it.job}")
