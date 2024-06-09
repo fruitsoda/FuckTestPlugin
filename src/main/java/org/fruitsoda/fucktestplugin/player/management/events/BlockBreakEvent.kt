@@ -9,6 +9,7 @@ import org.fruitsoda.fucktestplugin.Main
 object BlockBreakEvent:Listener{
 
     @EventHandler
+    //tlqkf
     fun onBreakBlockEvent(e: BlockBreakEvent){
         val msg1:String = Main.instance!!.config.getString("blockMessage.first")!!
         val msg2:String = Main.instance!!.config.getString("blockMessage.second")!!
