@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FuckTestPlugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FuckTestPlugin.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/org.fruitsoda.FuckTestPlugin.main.iml" filepath="$PROJECT_DIR$/.idea/modules/org.fruitsoda.FuckTestPlugin.main.iml" />
     </modules>
   </component>
 </project>

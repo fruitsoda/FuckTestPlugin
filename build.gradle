@@ -53,7 +53,11 @@ kotlin {
 }
 shadowJar {
     archiveFileName = 'fucktestplugin.jar'
-    destinationDirectory = file("D:\\MinecraftTestPluginServer\\plugins")
+    //windows
+    //destinationDirectory = file("D:\\MinecraftTestPluginServer\\plugins")
+
+    //macOS
+    destinationDirectory = file("/Users/imgyeonghun/Desktop/MinecraftTestPluginServer/plugins")
     manifest {
         attributes 'Main-Class': 'org.fruitsoda.fucktestplugin.Main'
     }
