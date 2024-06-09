@@ -1,5 +1,6 @@
 package org.fruitsoda.fucktestplugin
 
+import org.fruitsoda.fucktestplugin.player.management.events.BlockBreakEvent
 import org.fruitsoda.fucktestplugin.player.management.events.PlayerJoinEvent
 import org.fruitsoda.fucktestplugin.player.management.events.PlayerKickEvent
 import org.fruitsoda.fucktestplugin.player.management.events.PlayerQuitEvent
@@ -11,6 +12,7 @@ object EventManager {
                 registerEvents(PlayerJoinEvent, it)
                 registerEvents(PlayerKickEvent, it)
                 registerEvents(PlayerQuitEvent, it)
+                registerEvents(BlockBreakEvent, it)
             }
         }
     }
