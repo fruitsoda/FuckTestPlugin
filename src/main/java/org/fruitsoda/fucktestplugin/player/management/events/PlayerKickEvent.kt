@@ -8,6 +8,6 @@ import org.fruitsoda.fucktestplugin.player.management.PlayerManager
 object PlayerKickEvent : Listener{
     @EventHandler
     fun onPlayerKickEvent(e: PlayerKickEvent){
-        PlayerManager.deletePlayer(e.player)
+        //PlayerManager.deletePlayer(e.player)
     }
 }

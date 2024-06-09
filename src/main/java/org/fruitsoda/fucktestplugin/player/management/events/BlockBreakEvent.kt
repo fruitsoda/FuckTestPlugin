@@ -10,8 +10,8 @@ object BlockBreakEvent:Listener{
 
     @EventHandler
     fun onBreakBlockEvent(e: BlockBreakEvent){
-        val msg1:String = Main.instance?.config?.getString("블록메시지.첫번째")!!
-        val msg2:String = Main.instance?.config?.getString("블록메시지.두번째")!!
+        val msg1:String = Main.instance!!.config.getString("blockMessage.first")!!
+        val msg2:String = Main.instance!!.config.getString("blockMessage.second")!!
         e.player.sendMessage(msg1)
         e.player.sendMessage(msg2)
     }
