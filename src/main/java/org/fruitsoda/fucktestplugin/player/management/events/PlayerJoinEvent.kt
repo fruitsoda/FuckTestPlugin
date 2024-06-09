@@ -6,10 +6,10 @@ import org.bukkit.event.player.PlayerJoinEvent
 import org.bukkit.plugin.java.JavaPlugin
 import org.fruitsoda.fucktestplugin.player.management.PlayerManager
 
-object  PlayerJoinEvent  : Listener, JavaPlugin()  {
+object  PlayerJoinEvent  : Listener {
     @EventHandler
     fun onPlayerJoinEvent(e: PlayerJoinEvent){
-        val msg:String? = this.config.getString("접속메시지")
-        e.joinMessage = msg
+//        val msg:String? = this.config.getString("접속메시지")
+//        e.joinMessage = msg
     }
 }
